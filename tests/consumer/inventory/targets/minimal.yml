@@ -1,0 +1,14 @@
+parameters:
+  sample:
+    name: minimal
+    data:
+      greeting: hello
+  kapitan:
+    vars:
+      target: minimal
+    compile:
+      - output_path: manifests
+        input_type: kadet
+        input_paths:
+          - lib/sample-generator
+        output_type: yaml
